@@ -1,0 +1,1 @@
+let t=document.location.href;new MutationObserver(()=>{const e=document.location.href;e!==t&&(t=e,n())}).observe(document,{subtree:!0,childList:!0});const n=()=>setTimeout(o,100);function o(){document.querySelectorAll('span[title="Deployment Status Label: Destroyed"]').forEach(e=>{e.parentElement.parentElement.style.display="none",console.log("Removed stale deployment")})}o();

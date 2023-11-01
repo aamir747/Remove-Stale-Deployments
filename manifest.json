@@ -1,0 +1,38 @@
+{
+  "name": "Remove Stale Deployments",
+  "description": "Removes stale deployments from GitHub PRs, making the timeline UI cleaner",
+  "version": "0.1.0",
+  "manifest_version": 3,
+  "icons": {
+    "128": "img/rm-stale-deployments.png"
+  },
+  "content_scripts": [
+    {
+      "js": [
+        "assets/content-script-loader.chunk-7a13d39b.7e314bf4.js"
+      ],
+      "matches": [
+        "*://*.github.com/*"
+      ],
+      "run_at": "document_idle"
+    }
+  ],
+  "web_accessible_resources": [
+    {
+      "matches": [],
+      "resources": [
+        "img/rm-stale-deployments.png"
+      ],
+      "use_dynamic_url": false
+    },
+    {
+      "matches": [
+        "*://*.github.com/*"
+      ],
+      "resources": [
+        "assets/chunk-7a13d39b.js"
+      ],
+      "use_dynamic_url": true
+    }
+  ]
+}
