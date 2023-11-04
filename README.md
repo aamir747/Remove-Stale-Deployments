@@ -11,3 +11,5 @@ A simple Chrome extension which removes stale deployments from GitHub PRs, makin
 4. Turn 'Developer mode' on
 5. Click 'Load unpacked'
 6. Navigate to the extension's folder and click OK
+
+Now whenever you open a PR, all stale deployments will be removed from the page automatically.
